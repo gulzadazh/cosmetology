@@ -1,0 +1,615 @@
+/*------------------------------------------------------------------
+Theme Name:	HEARTIFY
+Version:	1.0
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[TABLE OF CONTENTS]
+
+	1. Global Styles
+	2. Homepage Slider
+	3. Header
+	4. Theme Extras
+	5. About Section 
+	6. Insurance section
+	7. Twitter Feed
+	8. Team
+	9. Jobs Section
+	10. Pricing 
+	11. Services 
+	12. Blog Section
+		12.1. Related Posts
+	13. Footer / 1
+	14. Contact 
+	15. Footer / 2
+
+-------------------------------------------------------------------*/
+
+/* 1. Global Styles */
+
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Raleway", "sans-serif";
+  /*     font-size:1.4em; */
+  font-weight: 400;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.main-wrapper {
+  width: 100%;
+}
+
+/* 2. Homepage Slider */
+
+.bsh {
+  height: 180px;
+  overflow: hidden;
+  background: url(../../assets/img/texture/1.jpg) no-repeat center top;
+  background-size: auto 100%;
+}
+
+.bsh1 {
+  height: 270px;
+  overflow: hidden;
+  background: url(../../assets/img/texture/1.jpg) no-repeat center top;
+  background-size: auto 100%;
+}
+
+.bs-main {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+/* 3. Header */
+
+.top-header {
+  margin-top: 50px;
+  position: relative;
+  z-index: 9999;
+}
+
+.top-header .top-navigation .top-nav {
+  width: 100%;
+  text-align: center;
+}
+
+.top-header .top-navigation .top-nav li {
+  margin-left: 30px;
+}
+
+.top-header .top-navigation .top-nav li:nth-child(4) {
+  margin-left: 40px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.top-header .top-navigation .top-nav li:nth-child(4) a:hover {
+  border-bottom: none;
+}
+
+.top-header .top-navigation .top-nav li a {
+  color: black;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+}
+
+.top-header .top-navigation .top-nav li.active a,
+.top-header .top-navigation .top-nav li a:hover {
+  color: black !important;
+  border-bottom: 2px solid hsl(197, 3%, 58%) !important;
+  text-decoration: none;
+}
+
+.main-slider-image {
+  margin: 0px;
+  position: absolute;
+  top: 40%;
+  left: 100px;
+  width: 60%;
+  z-index: 888;
+}
+/* 4. Theme Extras */
+#home {
+  position: relative;
+}
+
+.main-header {
+  width: 100%;
+  height: 80px;
+  border-bottom: 3px solid #e6e6e6;
+  z-index: 900;
+  position: relative;
+}
+
+.sticky-header.stuck {
+  position: fixed;
+  background: white;
+  border-bottom: 2px solid #eaeaea;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9994;
+  height: 80px;
+}
+
+.main-header .main-logo {
+  margin-top: 30px;
+}
+
+.main-header .main-logo a {
+  color: black;
+}
+
+.main-header .main-logo img {
+  margin-right: 14px;
+}
+
+.main-header .main-logo {
+  color: black;
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.logo1 {
+  margin-top: 10px;
+}
+
+.main-navigation .main-nav li {
+  height: 80px;
+  padding-top: 30px;
+  border-right: 1px solid #e6e6e6;
+  margin-right: -5px;
+}
+
+.main-navigation .main-nav li:nth-child(1) {
+  border-left: 1px solid #e6e6e6;
+}
+
+.main-navigation .main-nav li a {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #a6a6a6;
+  width: 100%;
+  padding: 0px 30px 29px 30px;
+  border-bottom: 3px solid transparent;
+}
+
+.main-navigation .main-nav li.active a,
+.main-navigation .main-nav li a:hover {
+  color: black;
+  text-decoration: none;
+  border-bottom: 3px solid hsl(197, 3%, 58%) !important;
+}
+
+.list-inline > li {
+  padding: 0px;
+}
+
+.navbar-toggle {
+  margin-top: 17px;
+}
+
+/* 5. About Section */
+
+.mission-stat h5 {
+  color: #000;
+  line-height: 36px;
+  font-weight: 400 !important;
+  font-size: 24px;
+}
+
+p.lead {
+  color: #000;
+  line-height: 36px;
+  font-weight: 400 !important;
+  font-size: 24px;
+}
+
+.mission-stat p.lead {
+  font-weight: 400;
+  margin-bottom: 70px;
+}
+
+/* 11. Services */
+
+#services3 {
+  background: #fff;
+  margin-bottom: 50px;
+}
+
+#services3 .services-info3 img {
+  display: table;
+  margin: 0 auto;
+  width: 1000px;
+  height: 500px;
+}
+
+#services .services-info .info-col h5,
+#services4 .services-info .info-col h5 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#services .services-info .info-col p,
+#services4 .services-info .info-col p {
+  margin-top: 15px;
+  color: #676767;
+  font-weight: 700;
+  font-size: 16px !important;
+}
+
+/* 12. Blog Section */
+
+#blog {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 150px;
+}
+
+.blog-stat {
+}
+
+.blog-stat p.lead {
+  margin-top: 20px;
+}
+
+#blog-posts {
+  position: relative;
+  top: 50px;
+  padding-bottom: 20px;
+}
+
+#blog-posts .blog-post {
+  border: 2px solid #eaeaea;
+  height: 100%;
+  padding-bottom: 0px;
+}
+
+#blog-posts .blog-post img.post-img {
+  width: 100%;
+}
+
+.post-img {
+  position: relative;
+}
+
+#blog-posts .blog-post img.ab-icon {
+  position: absolute;
+  bottom: -40px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+}
+
+#blog-posts .blog-post .info-col {
+  position: relative;
+  text-align: center;
+  margin: 50px 20px;
+  padding: 0px;
+  padding-right: 10px;
+}
+
+#blog-posts .blog-post .info-col a {
+  color: black;
+}
+
+#blog-posts .blog-post .info-col h5 {
+  font-weight: 600;
+  line-height: 25px;
+  margin-top: 60px;
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+
+#blog-posts .blog-post .info-col p {
+  margin-top: 40px;
+  color: #676767;
+  font-weight: 500;
+}
+
+#blog-posts .blog-post {
+  text-align: center;
+}
+
+#blog-posts .blog-post ul.post-nav li:nth-child(1) {
+  border-right: 1px solid #eaeaea;
+  padding-right: 40px;
+}
+
+/* 14. Contact */
+
+#contact {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+#contact .contact-stat {
+  margin-top: 50px;
+}
+
+.info-col h4 {
+  font-weight: bold;
+  line-height: 25px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+
+#contact .info-col .contact-time {
+  margin-top: 40px;
+  color: #676767;
+  font-weight: 800;
+}
+
+#contact .info-col .phone {
+  color: #676767;
+  font-weight: 800;
+  font-family: "Open sans", "sans-serif";
+  margin-top: -10px;
+}
+
+#contact .info-col .clinic-add {
+  margin-top: 40px;
+  color: #676767;
+  font-weight: 800;
+  font-family: "Open Sans", "sans-serif";
+}
+
+#contact .info-col .contact-email {
+  margin-top: 40px;
+  color: #676767;
+  font-weight: 800;
+}
+
+#contact .info-col .email {
+  color: #676767;
+  font-weight: 800;
+  font-family: "Open sans", "sans-serif";
+  margin-top: -10px;
+}
+
+#contact .info-col .email a {
+  color: #676767;
+}
+
+/* Projects  */
+
+#projects {
+  padding-top: 70px;
+  background: #fafafa;
+}
+
+.projects-wrap {
+  padding: 0px;
+}
+
+.projects-wrap li {
+  width: 20%;
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(176, 207, 218, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  right: 0px;
+  width: 0%;
+  height: 0%;
+  margin: 0 auto;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlay h4 {
+  font-family: Open sans;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+}
+
+.overlay h4 span {
+  display: block;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.overlay h4:after {
+  content: " ";
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: rgba(255, 255, 255, 0.6);
+  display: table;
+  padding-top: 12px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  width: 60px;
+}
+
+.overlay a {
+  font-family: Open Sans;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fff;
+  border: 2px solid #fff;
+  display: table;
+  margin: 0 auto;
+  padding: 6px 20px;
+  font-family: Raleway;
+}
+
+.overlay a:hover {
+  background: #fff;
+  color: black;
+}
+
+.overlay-inner {
+  display: table-cell;
+  margin-top: 80px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  vertical-align: middle;
+  height: 138px;
+}
+
+.projects-wrap li:hover .overlay {
+  opacity: 1;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* the end  */
+
+.footer2-bottom {
+  padding: 45px 0 35px;
+  position: relative;
+}
+
+.footer2-bottom p b {
+  color: #292929;
+}
+
+.footer-social {
+  padding: 0px;
+  display: table;
+  float: right;
+  position: relative;
+  top: -5px;
+}
+
+.footer-social li {
+  float: left;
+  margin-left: 22px;
+  list-style: none;
+}
+
+.footer-social li a {
+  color: #646464;
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Note: Design for larger screens */
+@media only screen and (min-width: 1700px) and (max-width: 3500px) {
+  .landing-left {
+    height: 1600px !important;
+    padding: 230px 0;
+  }
+
+  .landing-right {
+    height: 1600px !important;
+    background-position: 64% 0 !important;
+  }
+
+  .fixed-bottom {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: #fff;
+  }
+}
+
+/* Note: Design for larger screens */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .main-navigation .main-nav li a {
+    font-size: 0.8em;
+    padding: 0px 16px 29px;
+  }
+}
+
+/* Note: Design for larger screens */
+@media only screen and (min-width: 208px) and (max-width: 767px) {
+  #job .apply-btn {
+    margin-right: -40px;
+  }
+
+  #services .services-info .info-col p,
+  #services4 .services-info .info-col p {
+    padding-left: 65px;
+  }
+
+  #services .services-info .info-col,
+  #services4 .services-info .info-col {
+    margin: 0px 0px 35px;
+  }
+
+  .projects-wrap li {
+    width: 100%;
+    float: left;
+    list-style: none outside none;
+    position: relative;
+  }
+
+  .services4 .info-col p {
+    display: table;
+    padding: 0px !important;
+  }
+
+  .footer2-bottom p {
+    text-align: center;
+  }
+
+  .footer-social {
+    padding: 0px;
+    display: table;
+    float: none;
+    position: relative;
+    top: 0px;
+    margin: 0 auto;
+  }
+
+/* Note: Design for larger screens */
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .projects-wrap li {
+    width: 50%;
+    float: left;
+    list-style: none outside none;
+    position: relative;
+  }
+}
